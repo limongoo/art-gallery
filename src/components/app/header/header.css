@@ -12,6 +12,10 @@
 
 .logo-text {
   font-size: 1.5rem;
+  color: $accent;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .ulist {

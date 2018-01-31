@@ -3,7 +3,8 @@ import html from './app.html';
 import './app.css';
 import Header from './header/Header';
 import Home from '../home/Home';
-import Resources from '../resources/Resources';
+import Portland from '../portland/Portland';
+import Brooklyn from '../brooklyn/Brooklyn';
 import Footer from './footer/Footer.js';
 import { removeChildren } from '../dom';
 
@@ -11,7 +12,8 @@ const template = new Template(html);
 
 // Hash Navigation
 const map = new Map();
-map.set('#resources', Resources);
+map.set('#portland', Portland);
+map.set('#brooklyn', Brooklyn);
 
 export default class App {
 
@@ -25,7 +27,7 @@ export default class App {
     const page = routes[0];
     if(page === this.page) return;
 
-    if(this.pageComponent) this.pageComponent.unrender();
+    // if(this.pageComponent) this.pageComponent.unrender();
     this.page = page;
     const Component = map.get(this.page) || Home;
     this.pageComponent = new Component();

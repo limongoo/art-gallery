@@ -1,4 +1,4 @@
-$accent: #ff8c8c;
+$accent: #c95151;
 $link: #0d415f;
 $darklink: #007BC2;
 $lightgray: #eeeeee;
@@ -11,5 +11,5 @@ $maxViewportSize: 1280px;
 $padding: 2rem;
 
 section {
-  color: #0d415f;
+  color: #c95151;
 }

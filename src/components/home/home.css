@@ -4,13 +4,7 @@
   position: relative;
   .layer {
     position: absolute;
-    /* background-color: rgba(0,0,0,0.1); */
-    width: 100%;
-    height: 100%;
-    transition: 0.3s ease all;
-    &:hover {
-      background-color: rgba(241, 119, 119, 0.3);
-    }
+    opacity: 0;
   }
 }
 
@@ -63,7 +57,7 @@
   a {
     color: $white;
     &:hover {
-      font-size: 1.5rem;
+      /* font-size: 1.5rem; */
     }
   }
 }
@@ -81,7 +75,7 @@
   a {
     color: $white;
     &:hover {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     }
   }
 }
@@ -107,7 +101,7 @@
 
 /* ------ Media Queries ------- */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   /* .home-grid > div:nth-child(1) {grid-area: a; }
   .home-grid > div:nth-child(2) {grid-area: b; }
   .home-grid > div:nth-child(3) {grid-area: c; } */
@@ -138,6 +132,33 @@
     }
   }
 
+  #hero {
+    position: relative;
+    .layer {
+      position: absolute;
+      /* background-color: rgba(0,0,0,0.1); */
+      width: 100%;
+      height: 100%;
+      transition: 0.3s ease all;
+      opacity: 1;
+      &:hover {
+        background-color: rgba(241, 119, 119, 0.8);
+        opacity: 1;
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
   /* .home-grid > div:nth-child(1) {max-width: 50%; } */
   /* .home-grid > div:nth-child(2) {padding: 0 5rem; }
   .home-grid > div:nth-child(3) {padding: 0 5rem; } */

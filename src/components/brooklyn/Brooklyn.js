@@ -1,5 +1,5 @@
 import html from './brooklyn.html';
-import './brooklyn.css';
+import '../portland/portland.css';
 import Template from '../Template';
 
 const template = new Template(html);

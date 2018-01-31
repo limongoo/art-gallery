@@ -1,0 +1,15 @@
+$accent: #ff8c8c;
+$link: #0d415f;
+$darklink: #007BC2;
+$lightgray: #eeeeee;
+$darkgray: #444140;
+$white: #ffffff;
+$gray: #E0E0E0;
+$black: #000000;
+
+$maxViewportSize: 1280px;
+$padding: 2rem;
+
+section {
+  color: #0d415f;
+}

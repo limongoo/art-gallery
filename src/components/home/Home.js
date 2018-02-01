@@ -1,5 +1,6 @@
 import html from './home.html';
 import './home.css';
+import './slide.css';
 import Picture from '../picture/Picture';
 import Template from '../Template';
 

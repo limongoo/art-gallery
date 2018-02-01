@@ -1,5 +1,6 @@
 import html from './brooklyn.html';
 import '../portland/portland.css';
+import '../home/slide.css';
 import Picture from '../picture/Picture';
 import Template from '../Template';
 

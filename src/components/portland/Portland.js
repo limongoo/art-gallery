@@ -1,5 +1,6 @@
 import html from './portland.html';
 import './portland.css';
+import '../home/slide.css';
 import Picture from '../picture/Picture';
 import Template from '../Template';
 

@@ -2,27 +2,37 @@
 
 .resource-grid {
   padding: $padding;
+  display: grid;
+  grid-gap: 2rem;
 }
 
-.resource-grid > div:nth-child(1) {order: 1;}
+#portland {
+  display: grid;
+  grid-gap: 2rem 0;
+}
+
+/* .resource-grid > div:nth-child(1) {order: 1;}
 .resource-grid > div:nth-child(2) {order: 2;}
 .resource-grid > div:nth-child(3) {order: 3;}
 .resource-grid > div:nth-child(4) {order: 4;}
+.resource-grid > div:nth-child(5) {order: 5;} */
 /* .resource-grid > * {padding: 1rem;} */
 
-@media screen and (min-width: 1000px) {
-  .resource-grid > div:nth-child(1) {grid-area: a;}
-  .resource-grid > div:nth-child(2) {grid-area: b;}
-  .resource-grid > div:nth-child(3) {grid-area: c;}
-  .resource-grid > div:nth-child(4) {grid-area: d;}
+@media screen and (min-width: 900px) {
+  /* .resource-grid > div:nth-child(1) {grid-area: t;}
+  .resource-grid > div:nth-child(2) {grid-area: a;}
+  .resource-grid > div:nth-child(3) {grid-area: b;}
+  .resource-grid > div:nth-child(4) {grid-area: c;}
+  .resource-grid > div:nth-child(5) {grid-area: d;} */
   
-  .resource-grid {
+  #portland {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "a a a"
-    "b c d";
-    align-items: flex-start;
-    /* grid-gap: 2rem; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-areas:
+    "t t t t"
+    "a a b b"
+    "c c d d";
+    align-items: flex-start; */
+    grid-gap: 2rem;
   }
 }

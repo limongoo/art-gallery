@@ -8,6 +8,10 @@
   }
 }
 
+#hero picture figcaption {
+  display: none;
+}
+
 .home-grid h2 {
   color: $accent;
   z-index: 5;

@@ -32,6 +32,6 @@
 #footer {
   grid-area: footer;
   text-align: center;
-  padding: $padding;
+  padding: 2rem 2rem 1rem;
   /* background: $black; */
 }

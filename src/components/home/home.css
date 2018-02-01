@@ -24,13 +24,31 @@
   color: $white;
 }
 
+.cry {
+  color: $accent;
+  z-index: 5;
+  padding: 4rem;
+  /* font-size: 2rem; */
+  transition: 0.3s ease all;
+  background-color: $accent;
+}
+
+.cry-sub {
+  font-size: 1rem;
+}
+
+.cry:hover {
+  color: $white;
+  padding: 4rem 4rem 4rem 5rem;
+}
+
 .sup {
   font-size: 3rem;
   font-weight: 400;
 }
 
 .content-grid {
-  padding: $padding;
+  padding: 0px;
 }
 
 .home-grid {

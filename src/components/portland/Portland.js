@@ -11,8 +11,7 @@ export default class Portland {
     const dom = template.clone();
 
     const pdxImg = ['wes-carr-377398_vhdjwo.jpg', 'meric-dagli-487825_krjhna.jpg', 'jordan-andrews-317311_fj2pjx.jpg', 'jon-tyson-228428_iqlxfa.jpg', 'henrik-donnestad-469641_nx9zdr.jpg'];
-
-    const pdxAlt = ['Photo by Wes Carr via Unsplash', 'Photo by  via Unsplash', 'Photo by  via Unsplash', 'Photo by  via Unsplash', 'Photo by  via Unsplash'];
+    const pdxAlt = ['Photo by Wes Carr via Unsplash', 'Photo by Meric Dagli via Unsplash', 'Photo by Jordan Andrews via Unsplash', 'Photo by John Tyson via Unsplash', 'Photo by Henrik Donnestad via Unsplash'];
 
     for(let i = 0; i < pdxImg.length; i++) {
       const portland = new Picture({

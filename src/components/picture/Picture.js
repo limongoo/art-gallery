@@ -29,7 +29,7 @@ export default class Picture {
       } else {
 
         // if this IS the last image, output the <img> element
-        pictureHTML += `<img srcset="${imgUrl}, ${retinaUrl} 2x" alt="${cloudinaryObj.alt}">`;
+        pictureHTML += `<img srcset="${imgUrl}, ${retinaUrl} 2x" alt="${cloudinaryObj.alt}"><figcaption>${cloudinaryObj.alt}</figcaption>`;
       }
     }
     return pictureHTML;

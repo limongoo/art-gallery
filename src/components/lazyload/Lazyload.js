@@ -13,7 +13,7 @@ export default class Lazyload {
   getLoRes(imgTarget, captionTarget) {
     const { width, height, options, fileName, caption } = this.imgObj;
     const loResWidth = Math.round(width / 100);
-    const loRestHeight = Math.round(height / 100);
+    const loResHeight = Math.round(height / 100);
     const loResOptions = `${options},w_${loResWidth},h_${loResHeight},e_blur:500`;
     const loResUrl = getUrl(fileName, loResOptions);
     imgTarget.src = loResUrl;
@@ -49,7 +49,7 @@ export default class Lazyload {
       rootMargin: '-200px 0px',
       threshold: 0.01
     };
-    
+
     const wrapper = dom.querySelector('.lazy');
     setTimeout(() => {
       let observer = new IntersectionObserver(([entry]) => {
